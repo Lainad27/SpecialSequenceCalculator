@@ -35,8 +35,10 @@ std::vector<unsigned long long int> TrialDivision(unsigned long long int n) {
 
     unsigned long long int v(unsigned long long int p,unsigned long long int m){
 		unsigned long long int res = 0;
-		for (unsigned long long int i = 1; i <= (log(m)/log(p)); ++i) { // <= to < +1
-			res += (floor(m/(pow(p,i))));
+		unsigned long long int pi = p;
+		while (pi<m){
+			res += floor(m/pi);
+			pi*=p;
 		}
 		return res;
 	}
