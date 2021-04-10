@@ -9,9 +9,9 @@
 	#define BITCLEAR(a, b) ((a)[BITSLOT(b)] &= ~BITMASK(b))
 	#define BITTEST(a, b) ((a)[BITSLOT(b)] & BITMASK(b))
 	#define BITNSLOTS(nb) ((nb + CHAR_BIT - 1) / CHAR_BIT)
-	const unsigned long long int a = 7;
-	#define  MAX 100000000
-	const unsigned long long int start = 30;
+	const unsigned long long int a = 10;
+	#define  MAX 6000000000
+	const unsigned long long int start = 3200000000;
 	char arr[BITNSLOTS(MAX)];
 	int resqqq =0;
 
