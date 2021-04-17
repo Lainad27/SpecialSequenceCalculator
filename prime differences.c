@@ -14,7 +14,7 @@ const unsigned long long int a = 10;     // calculate this term in the sequence
 const unsigned long long int start = 10; // starting value that will be checked. notice that you must go a bit under where you actually want to start.
 char arr[BITNSLOTS(MAX)]; // a bitset (bitset in C), where BITTEST(arr, i) is false iff i is prime.
 unsigned char gaps[500000000]; // Prime gaps, in an array. because all of the prime gaps are even (ignore the first one), 
-// and under 300 billion the gaps are smaller than 512 We can store them in a char array.
+// and under 300 billion the gaps are smaller than 512 We can store them in a char array. the size of gaps should be more than the prime counting func of MAX.
 int resqqq = 0; // this is just to check how many times the "check" function is used. unimportant.
 unsigned long long int v(unsigned long long int p, unsigned long long int m) // this computes https://en.wikipedia.org/wiki/Legendre%27s_formula for m!
 {
@@ -114,7 +114,7 @@ int main()
     for (unsigned long long i = 5; i < MAX; i++) // building gaps, the prime gaps. uses the technique described earlier.
     { ////////////////////////////////////////////////////////////////////////////////
         if (!BITTEST(arr, i))
-        { // This could cost less mem. lets say !BITTEST(arr, i) if 2*i+1 is prime. then 2 bitsets and 6*i+1,6*i-1. Wheels!
+        { 
             gaps[indi] = (i - current) / 2;
             current = i;
             indi++;
