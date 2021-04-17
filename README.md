@@ -28,3 +28,5 @@ b_7 = 72286099
 b_8 = 159329615
 
 b_9 = 2935782898
+
+So far all of those are [squarefree](https://en.wikipedia.org/wiki/Square-free_integer).
