@@ -8,13 +8,23 @@ Computational Remarks (regarding "prime differences.c", the best version that ne
 
 
 Define b_n as a_n + n
+
 b_n computed:
+
 b_1 = 1
+
 b_2 = 210
+
 b_3 = 3478
+
 b_4 = 8178
+
 b_5 = 252970
+
 b_6 = 3648841
+
 b_7 = 72286099
+
 b_8 = 159329615
+
 b_9 = 2935782898
