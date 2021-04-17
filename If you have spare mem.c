@@ -17,7 +17,7 @@
 	char arr[BITNSLOTS(MAX)];
 	unsigned char gaps[144449587];
 	int resqqq =0;
-    unsigned long int factors[100000000];
+    unsigned long int factors[MAX2];
     unsigned long long int v(unsigned long long int p,unsigned long long int m){
 		unsigned long long int res = 0;
 		unsigned long long int pi = p;
